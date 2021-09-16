@@ -37,10 +37,9 @@ steps:
 
 ### Inputs
 
-| Name | Description | Required | Default value |
-| --- | --- | --- | --- |
-| `path` | Directory that contains all Data Factory resources | false | `./` |
-| `id` | Data Factory resource ID | false | `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourceGroup/providers/Microsoft.DataFactory/factories/dataFactory` |
+- `path` (optional): Directory that contains all Data Factory resources. Defaults to `./` directory.
+
+- `id` (optional): Data Factory resource ID. Defaults to `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourceGroup/providers/Microsoft.DataFactory/factories/dataFactory`.
 
 ## Contributing
 
