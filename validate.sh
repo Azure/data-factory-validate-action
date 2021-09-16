@@ -1,9 +1,9 @@
 #!/bin/sh -l
 
-dataFactoryDirectory=$1
+dataFactoryDir=$1
 dataFactoryResourceId=$2
 
-cd $dataFactoryDirectory
+cd $dataFactoryDir
 ls -l
 
 echo "Installing Azure Data Factory Utilities package..."
