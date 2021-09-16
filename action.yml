@@ -1,0 +1,19 @@
+name: azure-data-factory-validate
+description: Validate all of the Azure Data Factory resources in the repository
+
+inputs:
+  path:
+    description: 'Directory that contains all Data Factory resources'
+    required: false
+    default: ./
+  id:
+    description: 'Data Factory resource ID'
+    required: false
+    default: '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourceGroup/providers/Microsoft.DataFactory/factories/dataFactory'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+    - ${{ inputs.id }}
