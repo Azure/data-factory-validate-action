@@ -1,4 +1,4 @@
-name: azure-data-factory-validate
+name: data-factory-validate
 description: Validate all of the Azure Data Factory resources in the repository
 
 inputs:
