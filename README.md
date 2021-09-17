@@ -30,7 +30,7 @@ The action is particularly useful on Continuous Integration (CI) workflows, wher
 ```yml
 steps:
   - name: Validate Data Factory resources
-    uses: Azure/data-factory-validate@v1.0.0
+    uses: Azure/data-factory-validate-action@v1.0.0
     # path: ./mydir [optional]
     # id: <data factory resource ID> [optional]
 ```
