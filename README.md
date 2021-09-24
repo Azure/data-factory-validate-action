@@ -10,27 +10,14 @@ The action is particularly useful on Continuous Integration (CI) workflows, wher
 
 ### Prerequisites
 
-1. Ensure your Data Factory is connected with a Git repository. For more info, see [Connect to a Git repository](https://docs.microsoft.com/en-us/azure/data-factory/source-control#connect-to-a-git-repository) and [Bicep & ARM Template formats](https://docs.microsoft.com/en-us/azure/templates/microsoft.datafactory/factories?tabs=bicep).
-
-2. Ensure the following `package.json` file exists in the same directory that contains your Data Factory resources in the Git repository:
-
-    ```json
-    {
-      "scripts":{
-        "build":"node node_modules/@microsoft/azure-data-factory-utilities/lib/index"
-      },
-      "dependencies":{
-        "@microsoft/azure-data-factory-utilities":"^0.1.5"
-      }
-    }
-    ```
+* Ensure your Data Factory is connected with a Git repository. For more info, see [Connect to a Git repository](https://docs.microsoft.com/en-us/azure/data-factory/source-control#connect-to-a-git-repository) and [Bicep & ARM Template formats](https://docs.microsoft.com/en-us/azure/templates/microsoft.datafactory/factories?tabs=bicep).
 
 ### Example Usage
 
 ```yml
 steps:
   - name: Validate Data Factory resources
-    uses: Azure/data-factory-validate-action@v1.0.0
+    uses: Azure/data-factory-validate-action@v1.1.3
     # with:
     #   path: ./mydir [optional]
     #   id: <data factory resource ID> [optional]
