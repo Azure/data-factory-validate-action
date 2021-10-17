@@ -17,7 +17,7 @@ The action is particularly useful on Continuous Integration (CI) workflows, wher
 ```yml
 steps:
   - name: Validate Data Factory resources
-    uses: Azure/data-factory-validate-action@v1.1.3
+    uses: Azure/data-factory-validate-action@v1.1.4
     # with:
     #   path: ./mydir [optional]
     #   id: <data factory resource ID> [optional]
