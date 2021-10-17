@@ -6,7 +6,7 @@ dataFactoryResourceId=$2
 cd $dataFactoryDir
 ls -l
 
-echo "Installing Azure Data Factory Utilities package..."\
+echo "Installing Azure Data Factory Utilities package..."
 npm install @microsoft/azure-data-factory-utilities
 echo "Installation completed."
 
