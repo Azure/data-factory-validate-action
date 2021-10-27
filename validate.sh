@@ -14,7 +14,7 @@ echo "Validating $dataFactoryResourceId at $(pwd)..."
 node ./node_modules/@microsoft/azure-data-factory-utilities/lib/index validate $(pwd) $dataFactoryResourceId
 status=$?
 
-if [ $? -eq 0 ]
+if [ $status -eq 0 ]
 then
   echo "Validation completed."
   exit 0
