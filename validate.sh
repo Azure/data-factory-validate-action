@@ -19,6 +19,6 @@ then
   echo "Validation completed."
   exit 0
 else
-  echo "Validation completed with errors" >&2
+  echo "Validation completed with errors." >&2
   exit 1
 fi
